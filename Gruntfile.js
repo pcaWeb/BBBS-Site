@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 					// sourcemap: 'none',
 				},
 				files: {
-					'css/style.css':'sass/style.scss'
+					'css/style-human.css':'sass/style.scss'
 				}
 			},
 			dist: {
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 					// sourcemap: 'none',
 				},
 				files: {
-					'css/style-min.css':'sass/style.scss'
+					'css/style.css':'sass/style.scss'
 				}
 			},
 		},
