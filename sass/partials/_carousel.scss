@@ -1,0 +1,90 @@
+/**  Carousel CSS **/ 
+.carousel-inner .hdr-txt {
+  z-index:100;
+  position:absolute;    
+  color:white;
+  background-color: $trans-green;
+  font-size:24px;
+  font-weight:bold;
+  display: block;
+  padding: 50px;
+  max-width: 70%;
+  top: 60%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.hdr-txt h2, .hdr-txt p {
+  padding: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #666;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
+}
+
+.hdr-txt h2 {
+
+}
+
+@media only screen 
+and (max-width: 768px) {
+  .carousel-inner .hdr-txt {
+  max-width: 100%;
+  top: 22%;
+  left: 0;
+  margin-right: 0;
+  transform: translate(0, 0)
+  }
+}
+
+/**  Carousel Fade **/
+
+.carousel.fade {
+  opacity: 1;
+}
+
+.carousel.fade .item {
+  transition: opacity ease-out .7s;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+
+.carousel.fade .item:first-child {
+  top: auto;
+  opacity: 0;
+  position: relative;
+}
+
+.carousel.fade .item.active {
+  opacity: 1;
+}
+
+.carousel-control {
+  opacity: 0;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+
+#featured .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
