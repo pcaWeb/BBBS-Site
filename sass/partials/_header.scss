@@ -68,20 +68,20 @@ header .navbar-default .navbar-toggle .icon-bar {
 }
 
 header .navbar-collapse.in {
-  background-color: rgba(0,0,0, .5);
+  background-color: $trans-green;
 }
 
 @media only screen
 and (max-width: 768px) {
   header .navbar-collapse.in {
-    background-color: rgba(0,0,0, .5);
+    background-color: $trans-green;
   }
 }
 
 /**  nav inbody **/
 
 header .inbody {
-  background: rgba(104,73,49,.9);
+  background: $trans-green;
 }
 
 header .navbar.inbody {
@@ -94,7 +94,7 @@ header .navbar.inbody .navbar-nav {
 }
 
 header .inbody .navbar-brand {
-  background-size: 43px;
+  background-size: 39px;
   background-position: top left;
   margin-top: 5px;
   padding-bottom: 0;
@@ -103,7 +103,7 @@ header .inbody .navbar-brand {
 
 header .inbody .navbar-brand h1 {
   font-size: 1.1em;
-  padding-left: 38px;
+  padding-left: 28px;
 }
 
 header .inbody .navbar-brand span.subhead {

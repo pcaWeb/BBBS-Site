@@ -1,18 +1,18 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700|Roboto:400,100,300,700);
 /*
  * This comment is not being compressed! 
  *
  */
 /**  Basic Page CSS **/
 body {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 2em;
   position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
   margin: 0;
 }
@@ -85,17 +85,17 @@ header .navbar-default .navbar-toggle .icon-bar {
 }
 
 header .navbar-collapse.in {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 128, 0, 0.3);
 }
 
 @media only screen and (max-width: 768px) {
   header .navbar-collapse.in {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 128, 0, 0.3);
   }
 }
 /**  nav inbody **/
 header .inbody {
-  background: rgba(104, 73, 49, 0.9);
+  background: rgba(0, 128, 0, 0.3);
 }
 
 header .navbar.inbody {
@@ -108,7 +108,7 @@ header .navbar.inbody .navbar-nav {
 }
 
 header .inbody .navbar-brand {
-  background-size: 43px;
+  background-size: 39px;
   background-position: top left;
   margin-top: 5px;
   padding-bottom: 0;
@@ -117,7 +117,7 @@ header .inbody .navbar-brand {
 
 header .inbody .navbar-brand h1 {
   font-size: 1.1em;
-  padding-left: 38px;
+  padding-left: 28px;
 }
 
 header .inbody .navbar-brand span.subhead {
@@ -130,10 +130,9 @@ header .inbody .navbar-brand span.subhead {
   position: absolute;
   color: white;
   background-color: rgba(0, 128, 0, 0.3);
-  font-size: 24px;
-  font-weight: bold;
   display: block;
   padding: 50px;
+  max-height: 100%;
   max-width: 70%;
   top: 60%;
   left: 50%;
@@ -142,14 +141,19 @@ header .inbody .navbar-brand span.subhead {
 }
 
 .hdr-txt h2, .hdr-txt p {
+  font-size: 1.3em;
   padding: 10px;
   text-align: center;
-  text-shadow: 1px 1px 1px #666;
-  -webkit-filter: blur(0px);
-  -moz-filter: blur(0px);
-  -o-filter: blur(0px);
-  -ms-filter: blur(0px);
-  filter: blur(0px);
+  text-shadow: 1px 1px 1px #000;
+  /*  -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);*/
+}
+
+.hdr-txt h2 {
+  font-size: 1.6em;
 }
 
 @media only screen and (max-width: 768px) {
