@@ -5,6 +5,17 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		/* *
+		 * Compass Task
+		 */
+		 compass: {
+		 	dev: {
+		 		options: {
+		 			config: 'config.rb'
+		 		}//options
+		 	}//dev
+		 },//compass
+
+		/* *
 		 * Sass Task
 		 */
 		sass: {
@@ -48,10 +59,17 @@ module.exports = function(grunt) {
 		 * Watch Task
 		 */
 		watch: {
+			options: {
+				livereload: true
+			}, //options
+
 			css: {
 				files: '**/*.scss',
-				tasks: ['sass', 'autoprefixer']
-			} //css
+				tasks: ['sass', 'compass:dev', 'autoprefixer']
+			}, //css
+			html: {
+				files: ['*.html']
+			} //html for livereload
 		} //watch
 
 
@@ -59,6 +77,7 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.registerTask('default', ['watch']);
