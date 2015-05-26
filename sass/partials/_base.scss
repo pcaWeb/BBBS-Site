@@ -1,17 +1,3 @@
- $font-stack: "Roboto", sans-serif;
-
- // Font weights
-$light: 100;
-$regular: 300;
-$bold: 600;
-
-//colours
-$white: #ffffff;
-$grey: #586D74;
-$black: #000;
-$green-bg: #E4D29D;
-$trans-green: hsla(120, 100%, 25%, 0.3);
-
 /**  Basic Page CSS **/ 
 body{
   font-family: $font-stack;

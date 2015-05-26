@@ -1,8 +1,14 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700|Roboto:400,100,300,700);
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700|Roboto:400,100,300,700");
 /*
  * This comment is not being compressed!!! 
- *
+ * And that's just wicked.
+ * All it took was to include a ! after the first asterisk above!
  */
+/*Modules and Variables*/
+/*Fonts*/
+/*Font weights*/
+/*colours*/
+/*Partials*/
 /**  Basic Page CSS **/
 body {
   font-family: "Roboto", sans-serif;
@@ -178,11 +184,11 @@ header .inbody .navbar-brand span.subhead {
   position: absolute;
   width: 100%;
   display: block;
-  -webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
-  -o-filter: blur(3px);
-  -ms-filter: blur(3px);
-  filter: blur(3px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
 
 .carousel.fade .item:first-child {
@@ -409,6 +415,7 @@ footer .navbar-nav > li a {
   color: #EEC856 !important;
 }
 
+/*Third-party*/
 .site-content {
   display: flex;
 }
